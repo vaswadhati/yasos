@@ -1,10 +1,16 @@
 Yet Another Set of Starters
 ===========================
-Starter kits for progressive web apps span the spectrum of useless and stale to useful but bloated with the kitchen sink included. For someone coming in to the world of modern web development, especially from a C/C++ background, it can be frustrating - so close to getting started and yet a big disconnect in how it all comes together. 
+Starter kits for progressive web apps span the spectrum of useless and stale to useful but bloated with the kitchen sink included. For anyone coming to the world of modern web development, especially from a C/C++ background, it can be frustrating - so close to getting something done and yet so much void in understanding how it all comes together.
 
-To be sure, there are excellent articles written on each befuddling topic and each such article typically also provides a pointer to the worked out example. The issue however is that in the web development world, things move at break neck speed and break backward compatibility often. Leaving the article and the accompanying source stale.
+To be sure, there are excellent articles written on each befuddling topic. Each such article typically all provides a pointer to the worked out example. The issue however is in web development world, things move at break neck speed and break backward compatibility often. Leaving the article and the accompanying source stale.
 
-Yasos is my attempt to capture my learning and *keep pace with the changes* to the core stack and the build tools. Think of it as a set of examples with a long term support (*LTS*) for as long as I remain interested in the web. Rather than create a bunch of repositories, I intend to keep the starters in this repository organized by their complexity and scope.
+Why Yasos
+---------
+Yasos was inspired by the urge to [solve my god damn problem](https://mxstbr.blog/2017/02/creating-open-source-projects/). The problem was in me spending way too much time googling the same sh\*t over and over again. Stuff that I had found a solution for just a week or month ago, I would be looking for again. More importantly, stuff that was relevant a month ago is no longer relevant because one or more dependencies have broken backward compatibility - so the hunt for a solutions starts over.
+
+The solution is two fold. First, create my own repository of knowledge acquired from hours of googling and second, maintain that knowledge. Yasos captures my learning and tries hard to *keep pace with the changes* in the core stack and build tools. Think of it as a set of examples with a long term support (*LTS*) for as long as I remain interested in the web.
+
+To address the kitchen sink problem, I created a series of starters. Each starter tries to be complete with a minimal set of concepts. And build on top of such minimal sets to create a more complete starter all the way up to a reasonably complex web app.
 
 The List of Starters
 ====================
