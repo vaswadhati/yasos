@@ -2,7 +2,7 @@ Yet Another Set of Starters
 ===========================
 Starter kits for progressive web apps span the spectrum of useless and stale to useful but bloated with the kitchen sink included. For anyone coming to the world of modern web development, especially from a C/C++ background, it can be frustrating - so close to getting something done and yet so much void in understanding how it all comes together.
 
-To be sure, there are excellent articles written on each befuddling topic. Each such article typically all provides a pointer to the worked out example. The issue however is in web development world, things move at break neck speed and break backward compatibility often. Leaving the article and the accompanying source stale.
+To be sure, there are excellent articles written on each befuddling topic. They even provide working sample code. The issue however is in web development world, things move at break neck speed and break backward compatibility often. Leaving the article and the accompanying source stale, sometimes in a matter of weeks.
 
 Why Yasos
 ---------
