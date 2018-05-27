@@ -9,9 +9,9 @@ Yasos is my attempt to capture my learning and *keep pace with the changes* to t
 The List of Starters
 ====================
 
- Name    | What's in it                              |
-+--------+-------------------------------------------+
- vanilla | Webpack4, VanillaJS, HTML5, CSS3          |
- basic   | Config from vanilla, preact, preact-router|
+| Name    | What's in it                              |
+|---------|-------------------------------------------|
+|vanilla  | Webpack4, VanillaJS, HTML5, CSS3          |
+| basic   | Config from vanilla, preact, preact-router|
 
 
