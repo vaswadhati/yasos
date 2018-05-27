@@ -34,14 +34,14 @@ After a roller coaster ride of evaluating various bundlers (Gulp, ParcelJS, ...)
 Regardless of the functional and non-functional requirements that drive the adoption of any of the above stock, we want an organization that allows us the ability to quickly get to where we need to. To that end, we have the following structure at the top level...
 ```console
 project-name
-├── app                     //<- application source (ES6, JSX, SCSS, ...)
-├── build                   //<- generated and bundled files ready for deployment
-├── cfg                     //<- webpack build pipeline parts and setup
-├── lib                     //<- external libraries installed locally in source form (see ATTRIBUTION.md)
-├── LICENSE                 //<- license file; for code that is meant to be shared, I recommend ISC, MIT or BSD.
-├── package.json            //<- metadata relevant to the project
-├── README.md               //<- high level overview and getting started instructions
-└── web                     //<- web related assets to be bundled along with code in app and lib folders
+├── app              //<- application source (ES6, JSX, SCSS, ...)
+├── build            //<- generated and bundled files ready for deployment
+├── cfg              //<- webpack build pipeline parts and setup
+├── lib              //<- external libraries installed locally in source form (see ATTRIBUTION.md)
+├── LICENSE          //<- for code that is meant to be shared, I recommend ISC, MIT or BSD.
+├── package.json     //<- metadata relevant to the project
+├── README.md        //<- high level overview and getting started instructions
+└── web              //<- web related assets to be bundled along with code in app and lib folders
 ```
 
 ### Webpack ###
