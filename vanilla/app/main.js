@@ -1,4 +1,4 @@
-import Greetings from './components/greetings';
+import { Header, Greetings } from './components';
 
 // import main css file to get processed by sass and webpack
 import 'web/normalize.css';
@@ -27,11 +27,7 @@ const aliens = [
 //   ```
 const template = document.createElement('template');
 
-template.innerHTML = `
-  <header class='${style.header}'>
-    <h1>Plain Vanilla JS + Webpack 4.x</h1>
-  </header>
-`;
+template.innerHTML = Header({ title: 'Plain Vanilla JS + Webpack 4.x' });
 fragment.appendChild(template.content);
 
 template.innerHTML = `<div id='root' class='${style.container}'/>`;

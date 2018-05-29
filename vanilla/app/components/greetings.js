@@ -1,6 +1,7 @@
-import { cx } from 'tiny';
-import style from './greetings.scss';
 import PropTypes from 'prop-types';
+import { cx } from 'tiny';
+
+import style from './greetings.scss';
 
 // v.a:
 // - make sure object rest and spread operators get transpiled correctly!

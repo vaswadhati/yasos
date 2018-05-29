@@ -29,7 +29,7 @@ const cssMinimizeOptions = {
 // - loader transform pipeline is last-in-first-out
 // - the options:
 //   - modules: true
-//   - localIdentName: '[local]--[hash:base64:5]'
+//   - localIdentName: '[local]-[hash:base64:5]'
 //   is how you setup and get going with CSS Modules
 //
 //   See https://blog.yipl.com.np/css-modules-with-react-the-complete-guide-a98737f79c7c
@@ -45,7 +45,7 @@ const cssTransforms = [
       sourceMap: true,
       modules: true,
       importLoaders: 2,
-      localIdentName: '[local]--[hash:base64:5]',
+      localIdentName: '[local]-[hash:base64:5]',
       minimize: cssMinimizeOptions
     }
   },

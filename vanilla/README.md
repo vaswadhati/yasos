@@ -1,5 +1,5 @@
-Basics - Getting started with Webpack 4.x
-=========================================
+Getting started with Webpack 4.x
+================================
 The bare minimum boiler plate you need to get started with Webpack 4.x and one possible way to organize the various parts required to create a bundle.
 
 It is quite possible there may be better ways and you may not even want to go down this path - choosing instead to go with ParcelJs, Preact-CLI, and Create-React-App and a dozen other alternatives.
@@ -18,7 +18,8 @@ Intentionally this starter restricts itself from exploring popular libraries suc
 TODO:
 - [] PRPL - is it worth introducing at this level using vanillajs?
 - [] REST - would the simplicity be lost if we integrate a REST API?
-- [] Helmet to inject global CSS
+- [] How to embed global CSS in head?
+- [] Remove react dependencies in package.json
 
 Features
 --------
@@ -69,7 +70,7 @@ Like [`start`](#start), but will auto-compile & auto-reload the server after any
 
 Issues and FAQs
 ===============
-In this section various links that I had to consult in order to get the starter to a working condition.
+In this section various links that I had to consult in order to get the starter to a working condition are listed.
 
 SASS/SCSS, CSS-Modules
 ----------------------

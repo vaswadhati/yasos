@@ -36,10 +36,10 @@ A starter that has 'LTS' status indicates that I will aim to keep the code on th
 
 | Name           | Focus area                                     | Status |
 |----------------|------------------------------------------------|--------|
-| basics         | get started with webpack 4.x                   | LTS    |
-| preact-basics  | using a client side router with preact         | LTS    |
-| react-basics   | using a client side router with react          | LTS    |
-| kanban-app     | basic-react, redux, css-transitions            | LTS    |
+| vanilla        | get started with webpack 4.x and ES6           | LTS    |
+| wtf-jsx        | get to know jsx using preact                   | LTS    |
+| code-split     | code-split, dynamic import                     | LTS    |
+| kanban-app     | react, redux, css-transitions                  | LTS    |
 
 Code organization common to all starters
 ----------------------------------------
