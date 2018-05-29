@@ -18,7 +18,7 @@ export default function Greetings({ name, underline, ...rest }) {
 
   return `
     <section class=${style.greeting}>
-      <h2>Greetings, ${name}.</h1>
+      <h2>Greetings, ${name}.</h2>
       <div class='${needsUnderline}'>
         ${we ? 'we' : '❤'} ${make ? 'make' : '❤'} ${contact ? 'contact' : '❤'}!!
       </div>

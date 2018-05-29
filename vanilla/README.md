@@ -27,6 +27,8 @@ Features
 * Asset Versioning
 * ES2015 (ES6) support
 * ESLint
+* PropTypes elimination in production build
+* Babel support for Object spread
 * Bundle Analysis
 
 Development
@@ -89,7 +91,8 @@ DOM
 
 Recommended Reading
 ===================
-These tend to get outdated pretty fast. Use them only as a means to get an overview and a gentler introduction to concepts, not as a reference. Use the source for the references.
+Use the links in this section as a means to get an overview and a gentler
+introduction to concepts, not as a reference. Go to the source for reference.
 
 Webpack
 -------
