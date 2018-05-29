@@ -16,7 +16,7 @@
     "lint": "eslint . --cache",
     "build": "webpack --colors --progress -p --env.production --config cfg/webpack",
     "watch": "webpack-dev-server --progress --config cfg/webpack",
-    "start": "live-server build/"
+    "start": "npm run build && live-server build/"
   },
   "dependencies": {
     "react": "^16.3.2",
