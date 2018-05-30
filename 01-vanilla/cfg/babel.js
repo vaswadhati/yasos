@@ -16,9 +16,7 @@ const presets = [
 ];
 
 const plugins = [
-  ['transform-react-jsx'],
   ['transform-object-rest-spread', { useBuiltins: true }],
-  ['syntax-dynamic-import'],
 ];
 
 /**
@@ -26,20 +24,9 @@ const plugins = [
  * @param {wpc} weppack based project configuration
  *
  */
-module.exports = (wpc) => {
+module.exports = (_wpc) => {
   const test = /\.jsx?$/;
   const exclude = /(node_modules|bower_components)/;
-
-  if (wpc.isProd) {
-    plugins.push([
-      'transform-react-remove-prop-types',
-      {
-        mode: 'remove',
-        removeImport: true,
-        additionalLibraries: ['react', 'react-dom'],
-      },
-    ]);
-  }
 
   const loaders = [
     {

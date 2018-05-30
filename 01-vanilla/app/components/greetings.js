@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { cx } from 'tiny';
 
 import style from './greetings.scss';
@@ -24,9 +23,4 @@ export default function Greetings({ name, underline, ...rest }) {
       </div>
     </section>
   `;
-};
-
-Greetings.propTypes /* remove-proptypes */ = {
-  name: PropTypes.string,
-  underline: PropTypes.string
 };

@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import style from './header.scss';
 
 export default function Header({ title, ...rest }) {
@@ -8,8 +6,4 @@ export default function Header({ title, ...rest }) {
       <h1>${title}</h1>
     </header>
   `;
-};
-
-Header.propTypes /* remove-proptypes */ = {
-  name: PropTypes.string
 };
