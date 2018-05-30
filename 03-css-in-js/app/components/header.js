@@ -13,5 +13,5 @@ export default function Header({ title, ...rest }) {
 };
 
 Header.propTypes /* remove-proptypes */ = {
-  name: PropTypes.string
+  title: PropTypes.string
 };

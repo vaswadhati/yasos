@@ -1,4 +1,4 @@
-/* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": true}] */
+/* eslint: import/no-extraneous-dependencies: ["error", {"devDependencies": true}] */
 const webpack = require('webpack');
 
 /**

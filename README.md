@@ -38,9 +38,9 @@ A starter that has 'LTS' status indicates that I will aim to keep the code on th
 |----|----------------|------------------------------------------------|--------|
 | 01 | vanilla        | get started with webpack 4.x and ES6           | LTS    |
 | 02 | wtf-jsx        | get to know jsx using preact                   | LTS    |
-| 03 | css-in-js      | exploring css-in-js                            | EOL    |
-| 04 | code-split     | code-split, dynamic import                     | LTS    |
-| 05 | kanban-app     | react, redux, css-transitions                  | LTS    |
+| 03 | css-in-js      | exploring css-in-js using preact              | EOL    |
+| 04 | code-split     | code-split, dynamic import                     | TBD    |
+| 05 | kanban-app     | react, redux, css-transitions                  | TBD    |
 
 Code organization common to all starters
 ----------------------------------------
