@@ -34,12 +34,13 @@ You can check out each starter's README file to get an understanding of what job
 
 A starter that has 'LTS' status indicates that I will aim to keep the code on the bleeding edge of the stack for at least a year. I know that is not quite the same meaning for 'LTS' elsewhere. An 'EOL' status means that no more time will be spent in upgrading the dependencies to the latest and in future it may be removed.
 
-| Name           | Focus area                                     | Status |
-|----------------|------------------------------------------------|--------|
-| vanilla        | get started with webpack 4.x and ES6           | LTS    |
-| wtf-jsx        | get to know jsx using preact                   | LTS    |
-| code-split     | code-split, dynamic import                     | LTS    |
-| kanban-app     | react, redux, css-transitions                  | LTS    |
+| #  | Name           | Focus area                                     | Status |
+|----|----------------|------------------------------------------------|--------|
+| 01 | vanilla        | get started with webpack 4.x and ES6           | LTS    |
+| 02 | wtf-jsx        | get to know jsx using preact                   | LTS    |
+| 03 | css-in-js      | exploring css-in-js                            | EOL    |
+| 04 | code-split     | code-split, dynamic import                     | LTS    |
+| 05 | kanban-app     | react, redux, css-transitions                  | LTS    |
 
 Code organization common to all starters
 ----------------------------------------

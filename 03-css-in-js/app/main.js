@@ -1,10 +1,14 @@
 import { h, render } from 'preact';
+import {css} from 'emotion';
 
 import { Header, Greetings } from './components';
 
 // import main css file to get processed by sass and webpack
 import 'web/normalize.css';
-import style from './main.scss';
+import 'site-css/_vars';
+
+import {container} from './main-style';
+console.log('container: ', container);
 
 const aliens = [
   { name: 'Venusian', underline: false, we: true, make: false, contact: false },
@@ -15,11 +19,11 @@ const aliens = [
 
 render((
   <div>
-    <Header title="Preact + JSX + Webpack 4.x" />
-    <div id="root" class={style.container}>
+    <Header title="CSS-in-JS + Preact + JSX + Webpack 4.x" />
+    <div id="root" class={css`${container}`}>
       {
         aliens.map(alien => <Greetings {...alien} />)
       }
     </div>
   </div>
-), document.body);
+), document.body, document.getElementById('root'));
