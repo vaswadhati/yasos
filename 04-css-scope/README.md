@@ -118,11 +118,11 @@ In this section various links that I had to consult in order to get the starter 
 CSS-Module, CSS-Loader, SASS
 ----------------------------
 - https://stackoverflow.com/questions/45506131/how-to-disable-css-modules-for-one-file-in-webpack
+- https://stackoverflow.com/questions/3525007/making-a-sass-mixin-with-optional-arguments
 - [disabling css modules per-stylesheet](https://github.com/webpack-contrib/css-loader/issues/215)
 - [flag to disable local scoping](https://github.com/webpack-contrib/css-loader/issues/193#issuecomment-342872867)
 - [can't resolve :global, :local](https://github.com/webpack-contrib/sass-loader/issues/448#issuecomment-338009911)
-[discussion on how to use css-modules with other global css](https://github.com/css-modules/css-modules/pull/65)
-
+- [discussion on how to use css-modules with other global css](https://github.com/css-modules/css-modules/pull/65)
 
 Recommended Reading
 ===================
