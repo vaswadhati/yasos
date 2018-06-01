@@ -50,9 +50,27 @@ styles.e5857a488e8ca56d3bf5.css   3.25 KiB       1  [emitted]  app
                      index.html  373 bytes          [emitted]
 ```
 
+After properly using sass best practices
+----------------------------------------
+
+
+```console
+Version: webpack 4.10.2
+Time: 3665ms
+Built at: 2018-06-01 02:27:58
+                          Asset       Size  Chunks             Chunk Names
+vendors.47cf3784c8d29beb1f1a.js   97.9 KiB       0  [emitted]  vendors
+styles.47cf3784c8d29beb1f1a.css   3.19 KiB       1  [emitted]  app
+    app.47cf3784c8d29beb1f1a.js   3.92 KiB       1  [emitted]  app
+                     index.html  373 bytes          [emitted]
+```
+
 Features
 --------
-TBD
+- [x] demonstrate escaping global sass/css styles from css-module
+- [x] sass placeholder (%) and its instantiation as a global
+- [x] sass @mixin and its use (include) in creating a global
+- [x] sass-resource-loader - very cool plugin for sass resources
 
 Development
 -----------
@@ -114,8 +132,9 @@ introduction to concepts, not as a reference. Go to the source for reference.
 ### CSS, SASS, ...
 - [Css Selectors](https://kolosek.com/css-selectors/)
 - [Sass import, partials](https://kolosek.com/sass-import/)
-- [Sass Exten](https://kolosek.com/css-extend/)
+- [Sass Extend](https://kolosek.com/css-extend/)
 - [When I Use (And Don't Use) SASS Extend](https://jdsteinbach.com/sass/use-extend/)
+- [Validating input in sass](https://www.sitepoint.com/validating-input-in-sass-mixins-and-functions/)
 
 ### Webpack, Loaders, Plugins, ... - https://itnext.io/sharing-sass-resources-with-sass-resources-loader-and-webpack-ca470cd11746 (* pretty cool *)
 

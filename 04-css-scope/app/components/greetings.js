@@ -12,9 +12,8 @@ import { cx } from 'tiny';
 export default function Greetings({ name, underline, ...rest }) {
   const { we, make, contact } = { ...rest };
   const needsUnderline = cx([
-    style.link, {
-      [style.underline]: underline
-    },
+    style.link,
+    { 'underline': underline },
   ]);
 
   return (

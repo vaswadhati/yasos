@@ -1,4 +1,23 @@
 
+/* illustrate the use of creating a global instance of a place holder */
+:global(.shadow) {
+  @extend %shadow;
+}
+
+/*
+illustrate the use of creating a global instance of a mixin...
+
+NOTE:
+- within a mixin, no variables are accessible (without importing
+  them; but then we do not want to import partials within partials.
+- the solution is to make each mixin accept parameters and since we
+  may or may not be creating a global instance of a style that uses
+  the mixin, start the mixin name with an underscore.
+*/
+:global(.underline) {
+  @include _underline($base-spacing);
+}
+
 .container {
   padding-top: $header-height + 5px;
   display: grid;
