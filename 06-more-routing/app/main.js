@@ -1,27 +1,26 @@
-// import main css file to get processed by sass and webpack
-import 'web/normalize.css';
-import style from './main.scss';
-
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-import { Header, Greetings } from './components';
+import AuthorizedRoute from './routes/protected';
+import PrimaryLayout from './routes/protected/home';
 
-const aliens = [
-  { name: 'Venusian', underline: false, we: true, make: false, contact: false },
-  { name: 'Martian', underline: false, we: false, make: true, contact: false },
-  { name: 'Jovian', underline: false, we: false, make: false, contact: true },
-  { name: 'Earthling', underline: true, we: true, make: true, contact: true },
-];
+import UnauthorizedRoute from './routes/public';
 
-render(
-  <div>
-    <Header title="React + JSX + Webpack 4.x" />
-    <div id="root" className={style.container}>
-      {
-        aliens.map((alien, index) => <Greetings key={index} {...alien} />)
-      }
-    </div>
-  </div>,
-  document.getElementById('root')
+import store from 'store';
+import './main.scss';
+
+const App = props => (
+  <Provider store={store}>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/auth" component={UnauthorizedRoute} />
+        <AuthorizedRoute path="/app" component={PrimaryLayout} />
+        <Redirect to="/auth" />
+      </Switch>
+    </BrowserRouter>
+  </Provider>
 );
+
+ReactDOM.render(<App />, document.getElementById('root'));

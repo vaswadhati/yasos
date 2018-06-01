@@ -1,16 +1,17 @@
-import style from './header.scss';
-
 import React from 'react';
-import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
-export default function Header({ title, ...rest }) {
-  return (
-    <header className={style.header}>
-      <h1>{title}</h1>
-    </header>
-  );
-};
+import './header.scss';
 
-Header.propTypes /* remove-proptypes */ = {
-  title: PropTypes.string
-};
+const PrimaryHeader = () => (
+  <header className="primary-header">
+    <h1>Welcome to our app!</h1>
+    <nav>
+      <NavLink to="/app" exact activeClassName="active">Home</NavLink>
+      <NavLink to="/app/users" activeClassName="active">Users</NavLink>
+      <NavLink to="/app/products" activeClassName="active">Products</NavLink>
+    </nav>
+  </header>
+);
+
+export default PrimaryHeader;

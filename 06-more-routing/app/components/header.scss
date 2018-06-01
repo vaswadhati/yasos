@@ -1,60 +1,23 @@
-@import 'site-css/vars';
-@import 'site-css/extensions';
-
-.header {
-  position: fixed;
-  height: $header-height;
-  width: 100%;
-  padding: 0;
-  left: 0;
-  top: 0;
-  background: $primary;
-  @extend .shadow;
-  z-index: 50;
-
-  h1 {
-    float: left;
-    margin: 0;
-    padding: 0 $base-spacing;
-    font-size: 24px;
-    line-height: $header-height;
-    font-weight: 400;
-    color: $secondary;
-  }
-
+.primary-header {
+  display: flex;
   nav {
-    float: right;
-    font-size: 100%;
+    flex: 1;
+    margin-left: 2em;
+    border-bottom: 2px solid #555;
 
     a {
       display: inline-block;
-      height: $header-height;
-      line-height: $header-height;
-      padding: 0 $base-spacing;
-      text-align: center;
-      min-width: 50px;
-      background: rgba(white, 0);
-      will-change: background-color;
-      text-decoration: none;
-      color: $secondary;
-      &:hover, &:active {
-        background: rgba(white, 0.3);
-      }
-    }
-  }
+      padding: 0.3em 1em;
+      color: #555;
 
-  @media screen and (max-width: 401px) {
-    nav {
-      a {
-        padding: 0 $base-spacing/2;
-        min-width: $base-spacing*2;
+      &:hover {
+        background-color: #eee;
       }
-    }
-  }
 
-  @media screen and (max-width: 321px) {
-    h1 {
-      font-size: 18px;
+      &.active {
+        background-color: #555;
+        color: #fff;
+      }
     }
   }
 }

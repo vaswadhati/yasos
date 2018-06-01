@@ -1,12 +1,59 @@
 
-@import 'site-css/vars';
-@import 'site-css/extensions';
+$green: #4db14d;
 
-.container {
-  padding-top: $header-height + 5px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  grid-template-rows: minmax(100px, auto);
+html {
+  box-sizing: border-box;
+  color: #333;
+  font: 18pt 'Oswald';
+  letter-spacing: 0.05em;
 }
 
+// Hey look, I learned this trick from Chris Coyier
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+button {
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
+  background-color: $green;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  font-size: 15pt;
+
+  &:focus {
+    background-color: darken(#4db14d, 10%)
+  }
+
+  &.outline {
+    border: 1px solid #999;
+    background-color: #fff;
+    color: #555;
+    &:hover {
+      border-color: $green;
+      color: $green;
+    }
+  }
+}
+
+main {
+  margin-top: 1em;
+}

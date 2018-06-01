@@ -43,9 +43,9 @@ const cssTransforms = [
     loader: 'css-loader',
     options: {
       sourceMap: true,
-      modules: true,
+      // modules: true,
       importLoaders: 2,
-      localIdentName: '[local]-[hash:base64:5]',
+      // localIdentName: '[local]-[hash:base64:5]',
       minimize: cssMinimizeOptions
     }
   },
