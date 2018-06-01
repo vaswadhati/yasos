@@ -4,8 +4,6 @@ This starter's focus is to understand css modules and how to selectively choose 
 
 A nagging issue (see the screen shot below) with css modules is scope. Frequently we run in to the situation where style for components have to be locally scoped. Whereas the site (or app) wide styles have to remain global.
 
-![class-duplication](doc/css-module-gone-wrong.png)
-
 When css modules feature (enabled in the css-loader) is used for all sass/css stylesheets we end up in a situation where the sass 'includes' get duplicated. If you have many reusable css parts, then pretty soon you will discover a bloated stylesheet at the end of the build. This is not good. There is no one size fits all solution here. There are two solutions discussed in the community:
 
 1. Use webpack ruleset to load two css processing pipeline - one for global and another for local. For example, write a test that matches global css files and use a css processing pipeline with css-module feature disabled (in css-loader). Likewise write a test that matches local css files and create a different css processing pipeline.
@@ -20,6 +18,8 @@ Below you will find the size difference in stylesheet before and after
 
 Before
 ------
+![class-duplication](doc/css-module-gone-wrong.png)
+
 ```console
 Version: webpack 4.10.2
 Time: 3609ms
@@ -33,6 +33,8 @@ styles.3c3517b9b70f6a79f826.css   3.64 KiB       1  [emitted]  app
 
 After
 -----
+![class-duplication](doc/css-module-done-right.png)
+
 ```console
 Version: webpack 4.10.2
 Time: 3560ms
