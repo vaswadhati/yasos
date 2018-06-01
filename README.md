@@ -65,13 +65,22 @@ Regardless of the functional and non-functional requirements that drive the adop
 
 ```console
 project-name
-├── app            //<- application source (ES6, JSX, SCSS, ...)
 ├── build          //<- generated and bundled files ready for deployment
-├── cfg            //<- webpack build pipeline parts and setup
-├── lib            //<- [optional] external libraries in source form (see ATTRIBUTION.md)
 ├── LICENSE        //<- for code that is meant to be shared, I recommend ISC, MIT or BSD.
 ├── package.json   //<- metadata relevant to the project
 ├── README.md      //<- high level overview and getting started instructions
+└── src            //<- 'code' including configuration goes here
+```
+
+All 'code' (including configuration to build the code) is kept under 'src' folder...
+
+```console
+src
+├── api            //<- remote service facade used by the app goes here
+├── app            //<- application source (ES6, JSX, SCSS, ...)
+├── cfg            //<- webpack build pipeline parts and setup
+├── doc            //<- notes, design documents, requirements go here
+├── lib            //<- [optional] external libraries in source form (see ATTRIBUTION.md)
 ├── store          //<- [optional] contains state of the application
 └── web            //<- web related assets to be bundled along with code in app and lib folders
 ```
@@ -98,7 +107,7 @@ app
 ├── components     //<- used by the app
 ├── main.js        //<- app shell
 ├── routes         //<- are pages or containers in a flow
-└── style          //<- app wide look and feel style sheets
+└── style          //<- app wide look and feel *may* go here
 ```
 ### Application State ###
 The global state of an application is kept under 'store' folder. It is optional and is present only when an application requires complex state management.
@@ -110,6 +119,7 @@ HTML, templates, images, icons and other visual and structural assets are kept i
 web
 ├── assets
 ├── index.ejs
+:
 └── manifest.json
 ```
 
@@ -118,5 +128,8 @@ External libraries used in source form are kept under 'lib' folder. The ATTRIBUT
 
 ```console
 lib
-└── ATTRIBUTION.md
+├── ATTRIBUTION.md //<- FOSS packages that are used by the app are listed here
+├── site-css       //<- site or app wide look & feel style could go here
+:
+└── tiny           //<- tiny library that you create to prevent bloat goes here
 ```
