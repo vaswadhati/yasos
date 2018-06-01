@@ -83,9 +83,9 @@ module.exports = (wpc) => {
 
   // add sass resource loader as the first step in the pipeline
   loaders.push({
-    loader: "sass-resources-loader",
+    loader: 'sass-resources-loader',
     options: {
-      resources: require(path.join(wpc.lib, "site-css/resources.js"))
+      resources: require(path.join(wpc.lib, 'site-css/resources.js'))
     }
   });
 

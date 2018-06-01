@@ -16,18 +16,14 @@ module.exports = (env, argv) => {
   process.env.NODE_ENV = mode;
 
   const root = path.join(__dirname, '../');
-  const store = path.join(root, 'store');
-  const api = path.join(root, 'api');
   const app = path.join(root, 'app');
   const cfg = path.join(root, 'cfg');
   const web = path.join(root, 'web');
   const lib = path.join(root, 'lib');
-  const build = path.join(root, 'build');
+  const build = path.join(root, '../', 'build');
 
   // webpack based project configuration
-  const wpc = {
-    isProd, argv, mode, root, store, api, app, cfg, web, lib, build
-  };
+  const wpc = { isProd, argv, mode, root, app, cfg, web, lib, build };
   console.table(wpc);
 
   // bring in the parts of the build pipeline

@@ -45,7 +45,7 @@ module.exports = (wpc) => {
   // avoid relative path imports in children; use aliases to import
   // using absolute path relative to the project root.
   const alias = {
-    //alias to api
+    // alias to api
     api: wpc.api,
     // alias to components
     components: `${wpc.app}/components`,

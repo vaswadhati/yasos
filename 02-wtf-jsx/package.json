@@ -14,9 +14,9 @@
     "JSX"
   ],
   "scripts": {
-    "lint": "eslint . --cache",
-    "build": "webpack --colors --progress -p --env.production --config cfg/webpack",
-    "watch": "webpack-dev-server --progress --config cfg/webpack",
+    "lint": "eslint src --cache",
+    "build": "webpack --colors --progress -p --env.production --config src/cfg/webpack",
+    "watch": "webpack-dev-server --progress --config src/cfg/webpack",
     "start": "npm run build && live-server build/"
   },
   "dependencies": {

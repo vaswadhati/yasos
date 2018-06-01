@@ -62,7 +62,7 @@
       2,
       {
         "args": "all",
-        "argsIgnorePattern": "^_|props|err|req|res|next|env"
+        "argsIgnorePattern": "^_|props|err|req|res|next|env|reject"
       }
     ],
     "prefer-const": 1,

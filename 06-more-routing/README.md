@@ -1,6 +1,8 @@
 Getting to know React Router 4
 ==============================
 
+NOTE: The original source for this starter was lifted from [this](https://css-tricks.com/react-router-4/) article. And it was heavilly modified to fit in to a structure that we feel is better.
+
 Features
 --------
 

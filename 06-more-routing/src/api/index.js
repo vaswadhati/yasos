@@ -14,7 +14,7 @@ export const getLoggedUser = () => {
 };
 
 export const login = () => {
-  return new Promise((resolve, _reject) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       store.dispatch({
         type: 'SET_LOGGED_USER',
@@ -26,7 +26,7 @@ export const login = () => {
 };
 
 export const logout = () => {
-  return new Promise((resolve, _reject) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       store.dispatch({
         type: 'SET_LOGGED_USER',

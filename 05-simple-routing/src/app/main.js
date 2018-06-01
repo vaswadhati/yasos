@@ -16,7 +16,7 @@ const aliens = [
 
 render(
   <div>
-    <Header title="React + JSX + Webpack 4.x" />
+    <Header title="React + JSX + React-Router + Webpack 4.x" />
     <div id="root" className={style.container}>
       {
         aliens.map((alien, index) => <Greetings key={index} {...alien} />)
