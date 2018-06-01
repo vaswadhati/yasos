@@ -4,7 +4,7 @@ This starter's focus is to understand css modules and how to selectively choose 
 
 A nagging issue (see the screen shot below) with css modules is scope. Frequently we run in to the situation where style for components have to be locally scoped. Whereas the site (or app) wide styles have to remain global.
 
-![class-duplication](04-css-scope/doc/css-module-gon-wrong.png)
+![class-duplication](doc/css-module-gone-wrong.png)
 
 When css modules feature (enabled in the css-loader) is used for all sass/css stylesheets we end up in a situation where the sass 'includes' get duplicated. If you have many reusable css parts, then pretty soon you will discover a bloated stylesheet at the end of the build. This is not good. There is no one size fits all solution here. There are two solutions discussed in the community:
 
