@@ -2,6 +2,14 @@ CSS modules, local and global scopes
 ====================================
 This starter's focus is to understand css modules and how to selectively choose between localized css vs global css.
 
+The recommended reading section provides good links to read more about css modules.
+
+In this starter we attempt to fix a nagging issue (see ![class duplication](css-duplication)) with css modules and that is of scope. Frequently we run in to the situation where style for components have to be locally scoped. Whereas the site (or app) wide styles have to remain global.
+
+
+When css modules feature (enabled by the css-loader) is used for all sass/css stylesheets we end up in a situation where the sass 'includes' get duplicated. If you have many reusable css parts, then pretty soon you will discover a bloated stylesheet at the end of the build. This is not good. This starter fixes that.
+
+
 Features
 --------
 TBD
@@ -63,3 +71,7 @@ Go to the source
 Spend sufficient time reading through these references. The payoff outweighs the hours you will spend googling for answers.
 
 TBD
+
+References
+==========
+[css-duplication](../doc/css-module-gone-wrong.png)
