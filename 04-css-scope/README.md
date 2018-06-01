@@ -4,7 +4,7 @@ This starter's focus is to understand css modules and how to selectively choose 
 
 A nagging issue (see the screen shot below) with css modules is scope. Frequently we run in to the situation where style for components have to be locally scoped. Whereas the site (or app) wide styles have to remain global.
 
-When css modules feature (enabled in the css-loader) is used for all sass/css stylesheets we end up in a situation where the sass 'includes' get duplicated. If you have many reusable css parts, then pretty soon you will discover a bloated stylesheet at the end of the build. This is not good. There is no one size fits all solution here. There are two solutions discussed in the community:
+When css modules feature (enabled in the css-loader) is used for all sass/css stylesheets we end up in a situation where the sass 'extends' get duplicated. If you have many reusable css parts, then pretty soon you will discover a bloated stylesheet at the end of the build. This is not good. There is no one size fits all solution here. There are two solutions discussed in the community:
 
 1. Use webpack ruleset to load two css processing pipeline - one for global and another for local. For example, write a test that matches global css files and use a css processing pipeline with css-module feature disabled (in css-loader). Likewise write a test that matches local css files and create a different css processing pipeline.
 
@@ -18,6 +18,8 @@ Below you will find the size difference in stylesheet before and after
 
 Before
 ------
+In the screen shot below, .shadow-v0xHm is included by the use of sass 'extend' in the localized style for greeting component. The issue is if there are dozen other components that use the 'shadow' in the local css, then there will be dozen unique instances of 'shadow' in the final stylesheet.
+
 ![class-duplication](doc/css-module-gone-wrong.png)
 
 ```console
@@ -33,6 +35,8 @@ styles.3c3517b9b70f6a79f826.css   3.64 KiB       1  [emitted]  app
 
 After
 -----
+With the ':global()' fix and removing extend out of any localized style, we can see that now 'shadow' can be used by any component that needs it. The tradeoff is that now in the component we must cascade in the 'shadow' style alongside the localized style.
+
 ![class-duplication](doc/css-module-done-right.png)
 
 ```console
