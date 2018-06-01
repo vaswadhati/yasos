@@ -1,7 +1,4 @@
 
-@import 'site-css/vars';
-@import 'site-css/extensions';
-
 .link {
   cursor: pointer;
   text-decoration: none;
@@ -11,7 +8,6 @@
   &:hover, &:active {
     background: rgba($primary, 0.3);
   }
-
 
   strong, em {
     display: block;
@@ -23,12 +19,6 @@
   }
 }
 
-.underline {
-  display: block;
-  margin-bottom: $base-spacing;
-  text-decoration: underline !important;
-}
-
 .greeting {
   display: block;
   position: relative;
@@ -36,8 +26,6 @@
   border-radius: 2px;
   margin: 0 0 $base-spacing/2;
   padding: $base-spacing;
-  @extend .shadow;
-
   h2 {
     margin-bottom: $base-spacing;
   }

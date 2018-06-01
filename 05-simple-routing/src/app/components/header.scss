@@ -1,6 +1,3 @@
-@import 'site-css/vars';
-@import 'site-css/extensions';
-
 .header {
   position: fixed;
   height: $header-height;
@@ -9,7 +6,6 @@
   left: 0;
   top: 0;
   background: $primary;
-  @extend .shadow;
   z-index: 50;
 
   h1 {

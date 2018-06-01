@@ -12,13 +12,12 @@ import { cx } from 'tiny';
 export default function Greetings({ name, underline, ...rest }) {
   const { we, make, contact } = { ...rest };
   const needsUnderline = cx([
-    style.link, {
-      [style.underline]: underline
-    },
+    style.link,
+    { 'underline': underline },
   ]);
 
   return (
-    <section className={style.greeting}>
+    <section className={cx([style.greeting, 'shadow'])}>
       <h2>Greetings, {name}.</h2>
       <div className={needsUnderline}>
         {we ? 'we' : '❤'} {make ? 'make' : '❤'} {contact ? 'contact' : '❤'}!!

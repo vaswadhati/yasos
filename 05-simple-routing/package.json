@@ -11,7 +11,9 @@
   "keywords": [
     "ES6",
     "REACT",
-    "REACT-ROUTER4"
+    "REACT-ROUTER4",
+    "CSS",
+    "CSS-MODULES"
   ],
   "scripts": {
     "lint": "eslint src --cache",
@@ -51,6 +53,7 @@
     "node-sass": "^4.9.0",
     "optimize-css-assets-webpack-plugin": "^4.0.2",
     "sass-loader": "^7.0.1",
+    "sass-resources-loader": "^1.3.3",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.10.0",
