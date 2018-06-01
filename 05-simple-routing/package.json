@@ -1,0 +1,76 @@
+{
+  "name": "react-router-app",
+  "version": "0.1.0",
+  "description": "first encounter with react router",
+  "author": "Hemalatha Manickam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vaswadhati/yasos.git"
+  },
+  "keywords": [
+    "ES6",
+    "REACT",
+    "REACT-ROUTER4"
+  ],
+  "scripts": {
+    "lint": "eslint . --cache",
+    "build": "webpack --colors --progress -p --env.production --config cfg/webpack",
+    "watch": "webpack-dev-server --progress --config cfg/webpack",
+    "start": "npm run build && live-server build/"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "prop-types": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-jsx": "^5.0.0",
+    "eslint-config-standard-react": "6.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-react": "^7.8.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.2",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.10.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions",
+      "last 2 safari versions"
+    ],
+    "production": [
+      "last 3 chrome versions",
+      "last 3 firefox versions",
+      "last 3 edge versions",
+      "last 3 safari versions"
+    ]
+  }
+}
