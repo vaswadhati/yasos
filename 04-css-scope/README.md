@@ -112,7 +112,12 @@ Use the links in this section as a means to get an overview and a gentler
 introduction to concepts, not as a reference. Go to the source for reference.
 
 ### CSS, SASS, ...
-- https://itnext.io/sharing-sass-resources-with-sass-resources-loader-and-webpack-ca470cd11746 (* pretty cool *)
+- [Css Selectors](https://kolosek.com/css-selectors/)
+- [Sass import, partials](https://kolosek.com/sass-import/)
+- [Sass Exten](https://kolosek.com/css-extend/)
+- [When I Use (And Don't Use) SASS Extend](https://jdsteinbach.com/sass/use-extend/)
+
+### Webpack, Loaders, Plugins, ... - https://itnext.io/sharing-sass-resources-with-sass-resources-loader-and-webpack-ca470cd11746 (* pretty cool *)
 
 
 Go to the source

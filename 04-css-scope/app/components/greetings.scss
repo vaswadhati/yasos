@@ -1,7 +1,4 @@
 
-@import 'site-css/vars';
-@import 'site-css/extensions';
-
 .link {
   cursor: pointer;
   text-decoration: none;
@@ -11,7 +8,6 @@
   &:hover, &:active {
     background: rgba($primary, 0.3);
   }
-
 
   strong, em {
     display: block;

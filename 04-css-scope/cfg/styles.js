@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 // v.a:
 // - css-loader internally uses postcss and cssnano... which means
@@ -72,11 +73,19 @@ module.exports = (wpc) => {
   }
 
   // NOTE: loaders are chained last-in-first-out
-  // add sass transformer as the first step in the pipeline
+  // add sass transformer as the second step in the pipeline
   loaders.push({
     loader: 'sass-loader',
     options: {
       sourceMap: true, includePaths: [wpc.app, wpc.web, wpc.lib]
+    }
+  });
+
+  // add sass resource loader as the first step in the pipeline
+  loaders.push({
+    loader: "sass-resources-loader",
+    options: {
+      resources: require(path.join(wpc.lib, "site-css/resources.js"))
     }
   });
 
