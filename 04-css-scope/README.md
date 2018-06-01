@@ -1,14 +1,48 @@
 CSS modules, local and global scopes
 ====================================
-This starter's focus is to understand css modules and how to selectively choose between localized css vs global css.
+This starter's focus is to understand css modules and how to selectively choose between localized css vs global css. The recommended reading section provides good links to read more about css modules.
 
-The recommended reading section provides good links to read more about css modules.
+A nagging issue (see the screen shot below) with css modules is scope. Frequently we run in to the situation where style for components have to be locally scoped. Whereas the site (or app) wide styles have to remain global.
 
-In this starter we attempt to fix a nagging issue (see ![class duplication](css-duplication)) with css modules and that is of scope. Frequently we run in to the situation where style for components have to be locally scoped. Whereas the site (or app) wide styles have to remain global.
+![class-duplication](doc/css-module-gon-wrong.png)
 
+When css modules feature (enabled in the css-loader) is used for all sass/css stylesheets we end up in a situation where the sass 'includes' get duplicated. If you have many reusable css parts, then pretty soon you will discover a bloated stylesheet at the end of the build. This is not good. There is no one size fits all solution here. There are two solutions discussed in the community:
 
-When css modules feature (enabled by the css-loader) is used for all sass/css stylesheets we end up in a situation where the sass 'includes' get duplicated. If you have many reusable css parts, then pretty soon you will discover a bloated stylesheet at the end of the build. This is not good. This starter fixes that.
+1. Use webpack ruleset to load two css processing pipeline - one for global and another for local. For example, write a test that matches global css files and use a css processing pipeline with css-module feature disabled (in css-loader). Likewise write a test that matches local css files and create a different css processing pipeline.
 
+The above approach works but creating two pipelines that are 99% the same seems a bit awkward to justify.
+
+2. Wrap css class names that need to be global with a ':global()'. The css-loader (I think) recognizes the decoration and skips the process of making that class name unique.
+
+In this starter we use the second approach. The catch in both cases is that where the class names are used, you will need cascade the global class with the local class yourself.
+
+Below you will find the size difference in stylesheet before and after
+
+Before
+------
+```console
+Version: webpack 4.10.2
+Time: 3609ms
+Built at: 2018-05-31 19:37:38
+                          Asset       Size  Chunks             Chunk Names
+vendors.3c3517b9b70f6a79f826.js   97.9 KiB       0  [emitted]  vendors
+styles.3c3517b9b70f6a79f826.css   3.64 KiB       1  [emitted]  app
+    app.3c3517b9b70f6a79f826.js   4.05 KiB       1  [emitted]  app
+                     index.html  373 bytes          [emitted]
+```
+
+After
+-----
+```console
+Version: webpack 4.10.2
+Time: 3560ms
+Built at: 2018-05-31 19:31:44
+                          Asset       Size  Chunks             Chunk Names
+vendors.e5857a488e8ca56d3bf5.js   97.9 KiB       0  [emitted]  vendors
+styles.e5857a488e8ca56d3bf5.css   3.25 KiB       1  [emitted]  app
+    app.e5857a488e8ca56d3bf5.js   3.95 KiB       1  [emitted]  app
+                     index.html  373 bytes          [emitted]
+```
 
 Features
 --------
@@ -57,21 +91,30 @@ Issues and FAQs
 ===============
 In this section various links that I had to consult in order to get the starter to a working condition are listed.
 
-TBD
+CSS-Module, CSS-Loader, SASS
+----------------------------
+- https://stackoverflow.com/questions/45506131/how-to-disable-css-modules-for-one-file-in-webpack
+- [disabling css modules per-stylesheet](https://github.com/webpack-contrib/css-loader/issues/215)
+- [flag to disable local scoping](https://github.com/webpack-contrib/css-loader/issues/193#issuecomment-342872867)
+- [can't resolve :global, :local](https://github.com/webpack-contrib/sass-loader/issues/448#issuecomment-338009911)
+[discussion on how to use css-modules with other global css](https://github.com/css-modules/css-modules/pull/65)
+
 
 Recommended Reading
 ===================
 Use the links in this section as a means to get an overview and a gentler
 introduction to concepts, not as a reference. Go to the source for reference.
 
-TBD
+### CSS, SASS, ...
+- https://itnext.io/sharing-sass-resources-with-sass-resources-loader-and-webpack-ca470cd11746 (* pretty cool *)
+
 
 Go to the source
 ================
 Spend sufficient time reading through these references. The payoff outweighs the hours you will spend googling for answers.
 
-TBD
+CSS-Loader
+----------
+- https://github.com/webpack-contrib/css-loader
+- https://github.com/shakacode/sass-resources-loader
 
-References
-==========
-[css-duplication](../doc/css-module-gone-wrong.png)
