@@ -50,9 +50,8 @@ styles.e5857a488e8ca56d3bf5.css   3.25 KiB       1  [emitted]  app
                      index.html  373 bytes          [emitted]
 ```
 
-After properly using sass best practices
-----------------------------------------
-
+After applying a few of the sass best practices
+-----------------------------------------------
 
 ```console
 Version: webpack 4.10.2
