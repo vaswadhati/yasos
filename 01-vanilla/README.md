@@ -74,6 +74,11 @@ Issues and FAQs
 ===============
 In this section various links that I had to consult in order to get the starter to a working condition are listed.
 
+Webpack and friends
+-------------------
+- https://stackoverflow.com/questions/40370749/how-to-remove-old-files-from-the-build-dir-when-webpack-watch
+- [webpack clean not cleaning](https://github.com/johnagan/clean-webpack-plugin/issues/76)
+
 SASS/SCSS, CSS-Modules
 ----------------------
 - [custom alias for scss import](https://github.com/zeit/next.js/issues/1325)
@@ -125,3 +130,4 @@ Webpack, Babel, Webpack plugins and loaders
 - https://webpack.js.org/concepts/
 - http://new.babeljs.io/docs/en/babel-preset-env.html
 - https://github.com/jantimon/html-webpack-plugin#configuration
+- https://github.com/johnagan/clean-webpack-plugin

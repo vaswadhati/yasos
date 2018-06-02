@@ -91,7 +91,7 @@ module.exports = (wpc) => {
     },
     plugins: [
       new webpack.ProvidePlugin({ React: 'react' }),
-      new Clean([wpc.build], { root: wpc.root }),
+      new Clean([wpc.build], { root: wpc.root, verbose: true, allowExternal: true }),
       new HTML({ template: `${wpc.web}/index.html`, ...HtmlOptions }),
       new Copy([{ context: wpc.web, from: '**/*.*', ignore: ['*.ejs', '*.html', '*.css'] }]),
       new Analyze(AnalyzerOptions),
