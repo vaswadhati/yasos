@@ -110,6 +110,12 @@ CSS (GRID, MODULES, ...)
 ------------------------
 - https://www.cssgrid.cc/css-grid-guide.html
 
+VanillaJS
+---------
+- https://itnext.io/how-to-write-a-frontend-javascript-plugin-using-es6-sass-webpack-a1c6d6fdeb71
+- https://ferdychristant.com/es6-modules-as-components-32a7b81fe9be
+- https://gist.github.com/fchristant/8fb8e83f9d0e575c44ab9b5f9fb6d622#file-component-js
+
 Go to the source
 ================
 Spend sufficient time reading through these references. The payoff outweighs the hours you will spend googling for answers.

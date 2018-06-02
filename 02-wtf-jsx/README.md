@@ -65,7 +65,9 @@ Issues and FAQs
 ===============
 In this section various links that I had to consult in order to get the starter to a working condition are listed.
 
-TBD
+PropTypes
+---------
+- https://stackoverflow.com/questions/47311310/proptypes-isrequired-on-react-router-4-params-prop
 
 Recommended Reading
 ===================

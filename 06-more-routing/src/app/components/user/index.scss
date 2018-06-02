@@ -1,0 +1,44 @@
+/*
+Illustrate creating a global instance of a mixin...
+ - See components/user/index.js for how '.active' and '.link' classes
+   below is used
+
+
+NOTE:
+- within a mixin, no variables are accessible (without importing
+  them);
+- importing partials from within a partial is considered a
+  poor practice.
+- the solution is to make each mixin accept parameters and provide
+  default parameters;
+- since we may or may not be creating a global instance of a style
+  that uses the mixin, start the mixin name with an underscore as
+  a convention, so that user/app level style sheet can 'include'
+  the mixin into a class of their own.
+*/
+:global(.link) {
+  &:hover {
+    @include _underline;
+    background-color: #eee;
+  }
+}
+
+.user-sub-layout {
+  display: flex;
+
+  aside {
+    width: 200px;
+    nav a {
+      color: #333;
+      padding: 0.2em 1em;
+      display: block;
+      &.active {
+        @include _active(#555, #fff);
+      }
+    }
+  }
+  .primary-content {
+    flex: 1;
+    margin-left: 2em;
+  }
+}

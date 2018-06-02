@@ -1,5 +1,9 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+// import Switch from 'react-router-dom/Switch';
+// import Route from 'react-router-dom/Route';
+// import Redirect from 'react-router-dom/Redirect';
+
 import PropTypes from 'prop-types';
 
 import PrimaryHeader from 'components/header';
@@ -9,10 +13,10 @@ import AppHomePage from 'components/home';
 import UserSubLayout from './user';
 import ProductSubLayout from './product';
 
-import './home.scss';
+import style from './home.scss';
 
 const PrimaryLayout = ({ match }) => (
-  <div className="primary-layout">
+  <div className={style['primary-layout']}>
     <PrimaryHeader />
     <main>
       <Switch>

@@ -84,6 +84,7 @@ src
 ├── store          //<- [optional] contains state of the application
 └── web            //<- web related assets to be bundled along with code in app and lib folders
 ```
+NOTE: I have seen some starter kits name the 'api' folder as 'service', probably to suggest that the app uses the 'service'. I prefer 'api' because an app may use several different services. Also it is instructive to read the differences between  [facade and service](https://stackoverflow.com/questions/15038324/are-the-roles-of-a-service-and-a-fa%c3%a7ade-similar#15079958)
 
 ### Webpack ###
 Webpack configuration files are kept under 'cfg' folder and is organized as a collection of parts that are merged together by webpack.js which is given as the entry point to webpack.

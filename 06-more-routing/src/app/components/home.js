@@ -16,7 +16,7 @@ const AppHomePage = ({ history }) => (
 );
 
 AppHomePage.propTypes /* remove-proptypes */ = {
-  history: PropTypes.Array
+  history: PropTypes.object
 };
 
 export default AppHomePage;
