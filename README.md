@@ -42,8 +42,9 @@ A starter that has 'LTS' status indicates that I will aim to keep the code on th
 | 04 | css-scope      | css modules, local and global scopes           | WIP    |
 | 05 | simple-routing | first encounter with react router              | WIP    |
 | 06 | more-routing   | public, protected and private routes           | WIP    |
-| 07 | code-split     | code-split, dynamic import                     | TBD    |
-| 08 | kanban-app     | react, redux, css-transitions                  | TBD    |
+| 07 | redux          | redux, thunk, testing using Jest               | WIP    |
+| 08 | code-split     | code-split, dynamic import                     | TBD    |
+| 09 | kanban-app     | react, redux, css-transitions                  | TBD    |
 
 Code organization common to all starters
 ----------------------------------------
