@@ -3,6 +3,7 @@ module.exports = () => {
     'moduleDirectories': [
       'src',
       'state',
+      'product',
     ],
     'testEnvironment': 'jsdom'
   };
