@@ -1,0 +1,78 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    },
+    "target": "ES6",
+    "module": "commonjs",
+    "sourceType": "module"
+  },
+  "extends": [
+    "standard"
+  ],
+  "overrides": [
+    {
+      "files": "*.test.js",
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ],
+  "env": {
+    "node": true,
+    "mocha": true,
+    "browser": true
+  },
+  "globals": {
+    "location": 1,
+    "ga": 1
+  },
+  "rules": {
+    "camelcase": 0,
+    "object-property-newline": 0,
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "one-var": 0,
+    "space-before-function-paren": 0,
+    "semi": [
+      2,
+      "always"
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "only-multiline"
+      }
+    ],
+    "no-unused-vars": [
+      2,
+      {
+        "args": "all",
+        "argsIgnorePattern": "^_|props|err|req|res|next|env|reject"
+      }
+    ],
+    "prefer-const": 1,
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "generator-star-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ]
+  }
+}
