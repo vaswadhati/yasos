@@ -49,7 +49,7 @@ Issues and FAQs
 ===============
 In this section various links that I had to consult in order to get the starter to a working condition are listed.
 
-TBD
+- [Potential to use react-router with preact](https://github.com/developit/react-router-4-test/issues/3)
 
 Recommended Reading
 ===================
@@ -64,6 +64,10 @@ introduction to concepts, not as a reference. Go to the source for reference.
 - https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46
 - https://medium.com/@pshrmn/a-simple-react-router-v4-tutorial-7f23ff27adf
 - https://css-tricks.com/react-router-4/
+
+### Routing Alternatives
+- https://navigation4asp.net/2018/01/10/how-they-should-rebuild-twitter-lite/
+
 
 Go to the source
 ================

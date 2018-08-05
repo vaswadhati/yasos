@@ -1,8 +1,8 @@
 {
   "name": "react-router-app",
   "version": "0.1.0",
-  "description": "Get to know react router 4",
-  "author": "Hemalatha Manickam",
+  "description": "More exploration of react router",
+  "author": "Hemalatha Manickam, Vijay Aswadhati",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -54,6 +54,7 @@
     "node-sass": "^4.9.0",
     "optimize-css-assets-webpack-plugin": "^4.0.2",
     "sass-loader": "^7.0.1",
+    "sass-resources-loader": "^1.3.3",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.10.0",

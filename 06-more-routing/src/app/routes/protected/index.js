@@ -1,5 +1,8 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
+// import Route from 'react-router-dom/Route';
+// import Redirect from 'react-router-dom/Redirect';
+
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -25,7 +28,7 @@ class AuthorizedRoute extends React.Component {
 }
 
 AuthorizedRoute.propTypes /* remove-proptypes */ = {
-  component: PropTypes.Component,
+  component: PropTypes.object,
   pending: PropTypes.bool,
   logged: PropTypes.bool
 };

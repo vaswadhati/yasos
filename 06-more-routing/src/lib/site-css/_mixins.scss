@@ -1,0 +1,10 @@
+@mixin _underline($base-spacing:8px) {
+  display: block;
+  margin-bottom: $base-spacing;
+  text-decoration: underline !important;
+}
+
+@mixin _active($background: #555, $foreground: #fff) {
+  background-color:$background;
+  color: $foreground;
+}

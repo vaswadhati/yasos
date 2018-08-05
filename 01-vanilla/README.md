@@ -74,6 +74,11 @@ Issues and FAQs
 ===============
 In this section various links that I had to consult in order to get the starter to a working condition are listed.
 
+Webpack and friends
+-------------------
+- https://stackoverflow.com/questions/40370749/how-to-remove-old-files-from-the-build-dir-when-webpack-watch
+- [webpack clean not cleaning](https://github.com/johnagan/clean-webpack-plugin/issues/76)
+
 SASS/SCSS, CSS-Modules
 ----------------------
 - [custom alias for scss import](https://github.com/zeit/next.js/issues/1325)
@@ -110,6 +115,12 @@ CSS (GRID, MODULES, ...)
 ------------------------
 - https://www.cssgrid.cc/css-grid-guide.html
 
+VanillaJS
+---------
+- https://itnext.io/how-to-write-a-frontend-javascript-plugin-using-es6-sass-webpack-a1c6d6fdeb71
+- https://ferdychristant.com/es6-modules-as-components-32a7b81fe9be
+- https://gist.github.com/fchristant/8fb8e83f9d0e575c44ab9b5f9fb6d622#file-component-js
+
 Go to the source
 ================
 Spend sufficient time reading through these references. The payoff outweighs the hours you will spend googling for answers.
@@ -119,3 +130,4 @@ Webpack, Babel, Webpack plugins and loaders
 - https://webpack.js.org/concepts/
 - http://new.babeljs.io/docs/en/babel-preset-env.html
 - https://github.com/jantimon/html-webpack-plugin#configuration
+- https://github.com/johnagan/clean-webpack-plugin

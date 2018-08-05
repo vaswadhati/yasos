@@ -42,8 +42,9 @@ A starter that has 'LTS' status indicates that I will aim to keep the code on th
 | 04 | css-scope      | css modules, local and global scopes           | WIP    |
 | 05 | simple-routing | first encounter with react router              | WIP    |
 | 06 | more-routing   | public, protected and private routes           | WIP    |
-| 07 | code-split     | code-split, dynamic import                     | TBD    |
-| 08 | kanban-app     | react, redux, css-transitions                  | TBD    |
+| 07 | redux          | redux, thunk, testing using Jest               | WIP    |
+| 08 | code-split     | code-split, dynamic import                     | TBD    |
+| 09 | kanban-app     | react, redux, css-transitions                  | TBD    |
 
 Code organization common to all starters
 ----------------------------------------
@@ -84,6 +85,7 @@ src
 ├── store          //<- [optional] contains state of the application
 └── web            //<- web related assets to be bundled along with code in app and lib folders
 ```
+NOTE: I have seen some starter kits name the 'api' folder as 'service', probably to suggest that the app uses the 'service'. I prefer 'api' because an app may use several different services. Also it is instructive to read the differences between  [facade and service](https://stackoverflow.com/questions/15038324/are-the-roles-of-a-service-and-a-fa%c3%a7ade-similar#15079958)
 
 ### Webpack ###
 Webpack configuration files are kept under 'cfg' folder and is organized as a collection of parts that are merged together by webpack.js which is given as the entry point to webpack.

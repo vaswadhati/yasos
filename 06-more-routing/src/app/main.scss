@@ -1,3 +1,10 @@
+/*
+ illustrate the use of creating a global instance of a place holder..
+ See components/user/index.js
+*/
+:global(.shadow) {
+  @extend %shadow;
+}
 
 $green: #4db14d;
 

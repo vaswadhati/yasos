@@ -1,5 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+// import Switch from 'react-router-dom/Switch';
+// import Route from 'react-router-dom/Route';
+
 import PropTypes from 'prop-types';
 
 // Sub Layouts
@@ -8,14 +11,14 @@ import BrowseUsersPage from 'components/user';
 import AddUserPage from 'components/user/add';
 import UserProfilePage from 'components/user/profile';
 
-import './index.scss';
+import style from 'components/user/index.scss';
 
 const UserSubLayout = ({ match }) => (
-  <div className="user-sub-layout">
+  <div className={style['user-sub-layout']}>
     <aside>
       <UserNav />
     </aside>
-    <div className="primary-content">
+    <div className={style['primary-content']}>
       <Switch>
         <Route path={match.path} exact component={BrowseUsersPage} />
         <Route path={`${match.path}/add`} exact component={AddUserPage} />
