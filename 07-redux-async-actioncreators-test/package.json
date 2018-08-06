@@ -1,8 +1,8 @@
 {
-  "name": "vanilla-app",
+  "name": "testing-async-action-creators",
   "version": "0.1.0",
-  "description": "Get started with webpack 4.x and vanillajs",
-  "author": "Vijay Aswadhati",
+  "description": "Testing redux async action creators",
+  "author": "Hemalatha Manickam",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -10,14 +10,27 @@
   },
   "keywords": [
     "ES6",
-    "VanillaJS"
+    "redux",
+    "jest"
   ],
   "scripts": {
     "lint": "eslint src --cache",
     "build": "webpack --colors --progress -p --env.production --config src/cfg/webpack",
     "watch": "webpack-dev-server --progress --config src/cfg/webpack",
     "start": "npm run build && live-server build/",
-    "test": "jest --config=src/cfg/jest.js"
+    "test": "jest"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "src/app/state"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/src/app/state/**/?(*.)(spec|test).{js,jsx,mjs}"
+    ]
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -31,6 +44,7 @@
     "eslint-config-standard": "^11.0.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.18.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
