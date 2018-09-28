@@ -6,7 +6,7 @@ Before moving on to build more complex applications, we need make a decision on 
 - SASS with CSS-Modules
 - CSS-in-JS
 
-You can think of CSS-in-JS as a stock that enhances how you use the basic ingredient - which is css at core. The popular choices for csss-in-js are:
+You can think of CSS-in-JS as a stock that enhances how you use the basic ingredient - which is css at core. The popular choices for css-in-js are:
 - styled-components
 - glamor
 - glamorous
