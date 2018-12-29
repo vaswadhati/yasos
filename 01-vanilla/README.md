@@ -72,12 +72,13 @@ Like [`start`](#start), but will auto-compile & auto-reload the server after any
 
 Issues and FAQs
 ===============
-In this section various links that I had to consult in order to get the starter to a working condition are listed.
+Listed in this section are links that I had to consult to get the starter to a working condition.
 
 Webpack and friends
 -------------------
 - https://stackoverflow.com/questions/40370749/how-to-remove-old-files-from-the-build-dir-when-webpack-watch
 - [webpack clean not cleaning](https://github.com/johnagan/clean-webpack-plugin/issues/76)
+- [Eslint-Loader error](https://stackoverflow.com/questions/45120789/spread-operator-and-eslint)
 
 SASS/SCSS, CSS-Modules
 ----------------------
@@ -102,6 +103,7 @@ introduction to concepts, not as a reference. Go to the source for reference.
 Webpack
 -------
 - https://auth0.com/blog/webpack-4-release-what-is-new/
+- https://www.thebasement.be/working-with-babel-7-and-webpack/
 
 CSS Modules
 -----------

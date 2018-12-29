@@ -1,11 +1,8 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // v.a:
-// - css-loader internally uses postcss and cssnano... which means
-//   we do not have to muck with postcss directly.
-// - To kickstart everything cssnano offers, we create options that
-//   cssnano supports and attach it to the 'minimize' option of
-//   the css-loader
+// FIXME: minimize is a deprecated option of CSS-Loader now...
+/*
 const cssMinimizeOptions = {
   autoprefixer: {
     add: true,
@@ -24,6 +21,7 @@ const cssMinimizeOptions = {
     disable: false
   }
 };
+*/
 
 // v.a:
 // - loader transform pipeline is last-in-first-out
@@ -46,7 +44,8 @@ const cssTransforms = [
       modules: true,
       importLoaders: 2,
       localIdentName: '[local]-[hash:base64:5]',
-      minimize: cssMinimizeOptions
+      // in the latest, minimize throws errors!
+      // minimize: cssMinimizeOptions
     }
   },
 ];

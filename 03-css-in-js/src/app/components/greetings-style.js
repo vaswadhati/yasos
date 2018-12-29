@@ -1,8 +1,8 @@
 
-import {css} from 'emotion';
+import { css } from 'emotion';
 
-import {theme} from 'site-css/_vars';
-import {shadow} from 'site-css/_extensions';
+import { theme } from 'site-css/_vars';
+import { shadow } from 'site-css/_extensions';
 
 const link = css`
   cursor: pointer;
@@ -45,4 +45,4 @@ const _greeting = css`
 `;
 
 const greeting = css`${_greeting}; ${shadow};`;
-export {link, underline, greeting};
+export { link, underline, greeting };

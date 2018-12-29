@@ -63,7 +63,7 @@ Like [`start`](#start), but will auto-compile & auto-reload the server after any
 
 Issues and FAQs
 ===============
-In this section various links that I had to consult in order to get the starter to a working condition are listed.
+Listed in this section are links that I had to consult to get the starter to a working condition.
 
 PropTypes
 ---------

@@ -1,9 +1,8 @@
 {
   "parserOptions": {
-    "ecmaVersion": 8,
+    "ecmaVersion": 2018,
     "ecmaFeatures": {
-      "modules": true,
-      "experimentalObjectRestSpread": true
+      "modules": true
     },
     "target": "ES6",
     "module": "commonjs",
@@ -31,6 +30,12 @@
   },
   "rules": {
     "camelcase": 0,
+    "no-multi-spaces": [
+      "error",
+      {
+        "ignoreEOLComments": true
+      }
+    ],
     "object-property-newline": 0,
     "brace-style": [
       "error",

@@ -1,9 +1,9 @@
 import { h } from 'preact';
-import {css} from 'emotion';
+import { css } from 'emotion';
 import PropTypes from 'prop-types';
 import { cx } from 'tiny';
 
-import {link, underline as cssUnderline, greeting} from './greetings-style';
+import { link, underline as cssUnderline, greeting } from './greetings-style';
 
 // v.a:
 // - make sure object rest and spread operators get transpiled correctly!

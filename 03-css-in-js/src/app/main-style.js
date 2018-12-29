@@ -1,6 +1,6 @@
-import {css} from 'emotion';
+import { css } from 'emotion';
 
-import {theme} from 'site-css/_vars';
+import { theme } from 'site-css/_vars';
 
 const container = css`
   padding-top: calc(${theme['header-height']} + 5px);
@@ -10,4 +10,4 @@ const container = css`
   grid-template-rows: minmax(100px, auto);
 `;
 
-export {container};
+export { container };

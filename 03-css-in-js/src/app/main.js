@@ -1,5 +1,5 @@
 import { h, render } from 'preact';
-import {css} from 'emotion';
+import { css } from 'emotion';
 
 import { Header, Greetings } from './components';
 
@@ -7,7 +7,7 @@ import { Header, Greetings } from './components';
 import 'web/normalize.css';
 import 'site-css/_vars';
 
-import {container} from './main-style';
+import { container } from './main-style';
 console.log('container: ', container);
 
 const aliens = [

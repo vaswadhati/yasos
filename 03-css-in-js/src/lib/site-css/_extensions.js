@@ -1,4 +1,4 @@
-import {css} from 'emotion';
+import { css } from 'emotion';
 
 /**
  * Shared Extensions (careful)
@@ -16,4 +16,4 @@ const shadow = css`
               0 2px 1px -1px rgba(0, 0, 0, 0.12);
 `;
 
-export {fullscreen, shadow};
+export { fullscreen, shadow };

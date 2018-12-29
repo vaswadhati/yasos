@@ -1,7 +1,7 @@
-import {css} from 'emotion';
+import { css } from 'emotion';
 
-import {theme} from 'site-css/_vars';
-import {shadow} from 'site-css/_extensions';
+import { theme } from 'site-css/_vars';
+import { shadow } from 'site-css/_extensions';
 
 console.log('theme: ', theme);
 const _header = css`
@@ -63,4 +63,4 @@ const _header = css`
 
 const header = css`${_header}; ${shadow}`;
 
-export {header};
+export { header };

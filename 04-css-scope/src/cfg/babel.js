@@ -2,23 +2,25 @@
 //   hacky way to prevent babel from converting ES6 to ES5 is to choose a
 //   browser that fully supports ES6... we just need to convert jsx to
 //   vdom, and leave rest of the ES6 code intact.
-const presets = [
-  ['env', {
+const presets = (wpc) => [
+  ['@babel/preset-env', {
     loose: true,
-    modules: false,
-    useBuiltins: true,
+    modules: false,     /* don't transpile ES6 modules */
+    useBuiltIns: false, /* disable polyfills; target the latest and greatest! */
     debug: true,
     targets: {
-      chrome: 65,
-      uglify: false
-    }
+      chrome: 71,
+      esmodules: true
+    },
+    // for uglify which we don't want
+    forceAllTransforms: wpc.isProd,
   }],
 ];
 
 const plugins = [
-  ['transform-react-jsx'],
-  ['transform-object-rest-spread', { useBuiltins: true }],
-  ['syntax-dynamic-import'],
+  ['@babel/plugin-transform-react-jsx'],
+  ['@babel/plugin-proposal-object-rest-spread', { useBuiltins: true }],
+  ['@babel/plugin-syntax-dynamic-import'],
 ];
 
 /**
@@ -44,7 +46,7 @@ module.exports = (wpc) => {
   const loaders = [
     {
       loader: 'babel-loader',
-      options: { presets, plugins }
+      options: { presets: presets(wpc), plugins }
     },
   ];
 

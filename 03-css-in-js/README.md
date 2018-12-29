@@ -1,7 +1,7 @@
 What the fish is CSS-in-JS?
 ===========================
 
-Before moving on to build more complex applications, we need make a decision on how to style our application. The predominant choices are:
+Before moving on to build more complex applications, we need to make a decision on how to style our application. The predominant choices are:
 - plain CSS
 - SASS with CSS-Modules
 - CSS-in-JS
@@ -77,7 +77,7 @@ Like [`start`](#start), but will auto-compile & auto-reload the server after any
 
 Issues and FAQs
 ===============
-In this section various links that I had to consult in order to get the starter to a working condition are listed.
+Listed in this section are links that I had to consult to get the starter to a working condition.
 
 - [usage patterns](https://github.com/emotion-js/emotion/issues/287)
 - [rgba pita](https://caniuse.com/#feat=css-rrggbbaa)

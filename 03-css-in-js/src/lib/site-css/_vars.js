@@ -15,4 +15,4 @@ const theme = {
   'header-height': `${headerHeight}px`
 };
 
-export {theme};
+export { theme };

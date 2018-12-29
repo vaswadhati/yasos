@@ -1,8 +1,8 @@
 import { h } from 'preact';
-import {css} from 'emotion';
+import { css } from 'emotion';
 import PropTypes from 'prop-types';
 
-import {header} from './header-style';
+import { header } from './header-style';
 
 export default function Header({ title, ...rest }) {
   return (
