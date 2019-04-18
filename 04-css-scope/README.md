@@ -132,6 +132,7 @@ introduction to concepts, not as a reference. Go to the source for reference.
 - [Css Selectors](https://kolosek.com/css-selectors/)
 - [Sass import, partials](https://kolosek.com/sass-import/)
 - [Sass Extend](https://kolosek.com/css-extend/)
+- [When to use a mixin, issues with extend](https://csswizardry.com/2014/11/when-to-use-extend-when-to-use-a-mixin/)
 - [When I Use (And Don't Use) SASS Extend](https://jdsteinbach.com/sass/use-extend/)
 - [Validating input in sass](https://www.sitepoint.com/validating-input-in-sass-mixins-and-functions/)
 
