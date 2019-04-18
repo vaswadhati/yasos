@@ -20,7 +20,7 @@ Before
 ------
 In the screen shot below, .shadow-v0xHm is included by the use of sass 'extend' in the localized style for greeting component. The issue is if there are dozen other components that use the 'shadow' in the local css, then there will be dozen unique instances of 'shadow' in the final stylesheet.
 
-![class-duplication](doc/css-module-gone-wrong.png)
+![class-duplication](src/doc/css-module-gone-wrong.png)
 
 ```console
 Version: webpack 4.10.2
@@ -37,7 +37,7 @@ After
 -----
 With the ':global()' fix and removing extend out of any localized style, we can see that now 'shadow' can be used by any component that needs it. The tradeoff is that now in the component we must cascade in the 'shadow' style alongside the localized style.
 
-![class-duplication](doc/css-module-done-right.png)
+![class-duplication](src/doc/css-module-done-right.png)
 
 ```console
 Version: webpack 4.10.2
